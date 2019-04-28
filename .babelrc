@@ -1,0 +1,15 @@
+// json file where we can place all commands and flags that can't fit in the webpack config file
+/*
+* pre-webpack terminal command:
+* babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch
+*/
+
+{
+  "presets": [
+    "@babel/preset-env",
+    "@babel/preset-react"
+  ],
+  "plugins": [
+    "@babel/plugin-proposal-class-properties"
+  ]
+}
